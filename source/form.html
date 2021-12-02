@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="" width="33" height="38" alt="Кэт Энерджи">
+      <img class="page-header__logo-text" src="" width="101" height="18" alt="">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="form">
+      <h1 class="form-title">Подбор программы</h1>
+      <div class="quaestionnaire">
+        <h2 class="visually-hidden">Данные кота</h2>
+        <p class="quaestionnaire__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <form class="quaestionnaire__form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="quaestionnaire__wrapper-name">
+            <span class="visually-hidden">Укажите имя кота</span>
+            <label class="quaestionnaire__name" for="quaestionnaire-name-cat">
+              ИМЯ:*
+            </label>
+            <input class="quaestionnaire__name-cat" type="text" id="quaestionnaire-name-cat"
+              name="quaestionnaire-name-cat" placeholder="Укажите имя кота" value="Барсик">
+          </p>
+          <p class="quaestionnaire__wrapper-heft">
+            <span class="visually-hidden">Укажите вес кота</span>
+            <label class="quaestionnaire__heft" for="quaestionnaire-heft-cat">
+              Вес (кг):*
+            </label>
+            <input class="quaestionnaire__heft-cat" type="text" id="quaestionnaire-heft-cat"
+              name="quaestionnaire-heft-cat" placeholder="Укажите вес кота" value="7">
+          </p>
+          <p class="quaestionnaire__wrapper-age">
+            <span class="visually-hidden">Укажите возраст кота</span>
+            <label class="quaestionnaire__age" for="quaestionnaire-age-cat">
+              Возраст (лет):
+            </label>
+            <input class="quaestionnaire__age-cat" type="text" id="quaestionnaire-age-cat" name="quaestionnaire-age-cat"
+              placeholder="Укажите возраст кота" value="7">
+          </p>
+
+          <div class="programm">
+            <fieldset>
+              <legend class="visually-hidden">Выбор программы</legend>
+              <ul class="programm__list">
+                <li class="programm__item">
+                  <label class="control">
+                    <input class="visually-hidden control__input" type="radio" name="slimming" value="slimming"
+                      checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Похудение</span>
+                  </label>
+                </li>
+                <li class="programm__item">
+                  <label class="control">
+                    <input class="visually-hidden control__input" type="radio" name="thick" value="thick">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Набор массы</span>
+                  </label>
+                </li>
+                <li class="programm__item">
+                  <label class="control">
+                    <input class="visually-hidden control__input" type="radio" name="do not know" value="do not know">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Не знаю (Нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
+
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo">
+        <span class="visually-hidden">Логотип Кэт Энерджи</span>
+        <a class="page-footer__logo-link" href="#">
+          <svg class="page-footer__logo-image" aria-hidden="true" focusable="false" width="128" height="24"></svg>
+        </a>
+      </div>
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <span class="visually-hidden">Мы в Вконтакте</span>
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
+          </li>
+          <li class="social__item">
+            <span class="visually-hidden">Мы в Инстаграме</span>
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"></a>
+          </li>
+          <li class="social__item">
+            <span class="visually-hidden">Мы в Фейсбуке</span>
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <b class="copyright__text">HTML Academy</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="copyright__link-developer" aria-hidden="true" focusable="false"></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
