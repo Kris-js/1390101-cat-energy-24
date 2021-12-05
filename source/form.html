@@ -39,25 +39,22 @@
       <form class="page-main__form order-form" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="order-form__group form-group form-group--questionary">
           <legend class="visually-hidden">Данные кота</legend>
-          <p class="form-group__inner">
-            <span class="visually-hidden">Укажите имя кота</span>
-            <label class="form-group__field field" for="questionary-name-cat">
+          <p class="form-group__inner field">
+            <label class="field__label" for="questionary-name-cat">
               Имя:*
             </label>
             <input class="field__input" type="text" id="questionary-name-cat" name="questionary-name-cat"
               placeholder="Укажите имя кота" value="Барсик" required>
           </p>
           <p class="form-group__inner">
-            <span class="visually-hidden">Укажите вес кота</span>
-            <label class="form-group__field field" for="questionary-heft-cat">
+            <label class="field__label" for="questionary-heft-cat">
               Вес (кг):*
             </label>
             <input class="field__input" type="text" id="questionary-heft-cat" name="questionary-heft-cat"
               placeholder="Укажите вес кота" value="7" required>
           </p>
           <p class="form-group__inner">
-            <span class="visually-hidden">Укажите возраст кота</span>
-            <label class="form-group__field field" for="questionary-age-cat">
+            <label class="field__label" for="questionary-age-cat">
               Возраст (лет):
             </label>
             <input class="field__input" type="text" id="questionary-age-cat" name="questionary-age-cat"
@@ -71,22 +68,22 @@
             <li class="form-programm__item">
               <label class="form-programm__field radio">
                 <input class="visually-hidden radio__input" type="radio" name="programm" value="slimming" checked>
-                <span class="form-programm__control-mark"></span>
-                <span class="form-programm__control-label">Похудение</span>
+                <span class="radio__control-mark"></span>
+                <span class="radio__control-label">Похудение</span>
               </label>
             </li>
             <li class="form-programm__item">
               <label class="form-programm__field radio">
                 <input class="visually-hidden radio__input" type="radio" name="programm" value="thick">
-                <span class="form-programm__control-mark"></span>
-                <span class="form-programm__control-label">Набор массы</span>
+                <span class="radio__control-mark"></span>
+                <span class="radio__control-label">Набор массы</span>
               </label>
             </li>
             <li class="form-programm__item">
               <label class="form-programm__field radio">
                 <input class="visually-hidden radio__input" type="radio" name="programm" value="do not know">
-                <span class="form-programm__control-mark"></span>
-                <span class="form-programm__control-label">Не знаю (Нужен ваш совет)</span>
+                <span class="radio__control-mark"></span>
+                <span class="radio__control-label">Не знаю (Нужен ваш совет)</span>
               </label>
             </li>
           </ul>
@@ -108,7 +105,7 @@
 
         <p class="order-form__group form-group">
           <label class="form-group__field field">
-            <h2 class="form-group__title">Комментарий</h2>
+            <span class="form-group__title">Комментарий</span>
             <textarea class="field__input" placeholder="Расскажите обо всех повадках кота" name="comment__box"
               id="comment__box" required></textarea>
           </label>
