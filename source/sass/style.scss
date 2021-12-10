@@ -1,1 +1,29 @@
-// Начните писать стили здесь
+
+// global
+@import "./global/global.scss";
+
+// components
+@import "./components/page-header.scss";
+@import "./components/slogan.scss";
+@import "./components/benefits.scss";
+@import "./components/advantages.scss";
+@import "./components/example.scss";
+@import "./components/map.scss";
+@import "./components/copyright.scss";
+@import "./components/main-nav.scss";
+@import "./components/page-footer.scss";
+@import "./components/page-main.scss";
+@import "./components/site-list.scss";
+@import "./components/slider.scss";
+@import "./components/social.scss";
+@import "./components/catalog.scss";
+@import "./components/product.scss";
+@import "./components/button.scss";
+@import "./components/additional.scss";
+@import "./components/present-description.scss";
+@import "./components/form.scss";
+@import "./components/order-form.scss";
+@import "./components/form-group.scss";
+@import "./components/field.scss";
+@import "./components/form-programm.scss";
+@import "./components/form-options.scss";
