@@ -3,26 +3,8 @@
   list-style: none;
 }
 
-.product-card__title {
-  margin: 0;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #222222;
-}
-
-.product-card__specifications {
-  margin: 0;
-  font-size: 12px;
-  line-height: 16px;
-  color: #444444;
-}
-
-.product-card__specifications-meaning {
-  margin: 0;
-}
-
 .product__card-text {
+  font-family: "Oswald", "Arial", sans-serif;
   margin: 0;
   font-size: 16px;
   line-height: 20px;
@@ -39,4 +21,5 @@
 
 .product__card-button {
   color: #444444;
+  background-color: transparent;
 }

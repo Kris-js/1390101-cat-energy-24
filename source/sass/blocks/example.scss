@@ -4,6 +4,7 @@
 }
 
 .example__title {
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 40px;
   margin: 0;
@@ -16,6 +17,12 @@
   color: #444444;
 }
 
+.example__description-statistics {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+}
+
 .example__list {
   margin: 0;
 }
@@ -25,6 +32,7 @@
 }
 
 .example__description-result {
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
