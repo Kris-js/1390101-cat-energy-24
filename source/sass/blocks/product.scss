@@ -4,22 +4,22 @@
 }
 
 .product__card-text {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   margin: 0;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #111111;
+  color: $color-black-900;
 }
 
 .product__card-description {
   margin: 0;
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: $color-grey-600;
 }
 
 .product__card-button {
-  color: #444444;
+  color: $color-grey-600;
   background-color: transparent;
 }

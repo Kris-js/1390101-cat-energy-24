@@ -1,10 +1,10 @@
 .example__wrapper {
-  background-color: #eaeaea;
-  color: #000000;
+  background-color: $color-grey-500;
+  color: $color-black-1000;
 }
 
 .example__title {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   font-size: 36px;
   line-height: 40px;
   margin: 0;
@@ -14,11 +14,11 @@
   margin: 0;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $color-grey-600;
 }
 
 .example__description-statistics {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   font-size: 24px;
   line-height: 24px;
 }
@@ -32,7 +32,7 @@
 }
 
 .example__description-result {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
