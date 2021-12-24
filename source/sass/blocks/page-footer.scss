@@ -1,3 +1,11 @@
 .page-footer__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 130px 1fr;
   background-color: $color-grey-300;
+  gap: 20px;
+}
+
+.page-footer__logo {
+  grid-column: 1 / 4;
+  justify-self: center;
 }

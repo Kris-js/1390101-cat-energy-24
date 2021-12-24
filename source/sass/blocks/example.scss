@@ -44,6 +44,11 @@
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+    gap: 167px;
+  }
 }
 
 .example__image-overlap {
