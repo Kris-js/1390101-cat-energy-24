@@ -7,6 +7,17 @@
   font-size: 36px;
   line-height: 36px;
   margin: 0;
+  padding-top: 27px;
+  padding-right: 35px;
+  padding-left: 36px;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 62px;
+    padding-right: 237px;
+    padding-left: 117px;
+    padding-bottom: 41px;
+  }
 }
 
 .slogan__discription {
@@ -14,9 +25,24 @@
   line-height: 14px;
   text-transform: uppercase;
   margin: 0;
+  padding-right: 62px;
+  padding-left: 60px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 366px;
+    padding-left: 119px;
+  }
 }
 
 .slogan__button {
+  display: block;
   font-size: 14px;
   line-height: 18px;
+  margin: 0 auto;
+  padding: 7px 44px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 63px;
+    padding: 14px 26px;
+  }
 }

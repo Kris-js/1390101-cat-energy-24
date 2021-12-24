@@ -1,3 +1,6 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
   background-color: $color-white;
+  color: $color-black;
 }

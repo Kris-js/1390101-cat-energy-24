@@ -1,3 +1,19 @@
+/*.advantages__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+почему-то включается только планшетная версия, как и в бенефитс
+}
+*/
+
 .advantages__title {
   font-family: $oswald;
   font-size: 36px;
@@ -7,8 +23,24 @@
 }
 
 .advantages__list {
+  display: grid;
   margin: 0;
-  color: $color-grey-600;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 154px;
+    row-gap: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 .advantages__description {
