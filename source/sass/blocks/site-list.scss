@@ -3,6 +3,10 @@
   list-style: none;
 }
 
+.site-list__item {
+  padding-bottom: 24px;
+}
+
 .site-list__link {
   color: $color-black;
   text-transform: uppercase;

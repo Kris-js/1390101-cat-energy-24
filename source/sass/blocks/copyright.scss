@@ -1,17 +1,13 @@
-.copyright {
-  display: grid;
-  grid-template-columns: 115px 1fr;
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  padding: 22px 0;
 }
 
 .copyright__text {
-  grid-column: 1 / 2;
-  justify-self: start;
   font-size: 16px;
   line-height: 18px;
   color: $color-grey-600;
-}
-
-.copyright__link {
-  grid-column: 2 / 3;
-  justify-self: end;
+  margin: 0;
 }

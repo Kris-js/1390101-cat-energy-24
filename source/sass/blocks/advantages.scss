@@ -1,4 +1,4 @@
-/*.advantages__wrapper {
+.advantages__wrapper {
   margin-left: auto;
   margin-right: auto;
   width: 280px;
@@ -10,9 +10,7 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
   }
-почему-то включается только планшетная версия, как и в бенефитс
 }
-*/
 
 .advantages__title {
   font-family: $oswald;
@@ -20,6 +18,8 @@
   line-height: 40px;
   color: $color-black;
   margin: 0;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 .advantages__list {

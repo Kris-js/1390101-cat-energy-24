@@ -1,12 +1,17 @@
 .social {
-  grid-column: 1 / 4;
+  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
 }
 
 .social__list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 0;
-  padding: 0;
+  display: flex;
   list-style-type: none;
+  justify-content: space-between;
+  margin: 0;
+  padding: 25px;
 }
-// куда делись они??
+
+.social__link {
+  width: 23px;
+  height: 23px;
+}
