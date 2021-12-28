@@ -1,9 +1,19 @@
 .slogan__wrapper {
   background-image: url("../img/background/index-katenergy.png");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .slogan__title {
+  font-family: $oswald;
+  color: $color-white;
   font-size: 36px;
   line-height: 36px;
   margin: 0;
@@ -13,14 +23,20 @@
   padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
+    color: $color-black;
+    font-size: 60px;
+    line-height: 60px;
     padding-top: 62px;
-    padding-right: 237px;
+    padding-right: 100px;
     padding-left: 117px;
     padding-bottom: 41px;
   }
 }
 
 .slogan__discription {
+  font-family: $oswald;
+  // Шрифт жирный
+  color: $color-white;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
@@ -29,7 +45,10 @@
   padding-left: 60px;
 
   @media (min-width: $tablet-width) {
-    padding-right: 366px;
+    color: $color-black;
+    font-size: 20px;
+    line-height: 20px;
+    padding-right: 300px;
     padding-left: 119px;
   }
 }
@@ -43,7 +62,7 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    margin-top: 63px;
+    margin-top: 49px;
     padding: 14px 26px;
   }
 }

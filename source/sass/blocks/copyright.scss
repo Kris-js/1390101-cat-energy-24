@@ -1,8 +1,18 @@
+.copyright {
+  @media (min-width: $tablet-width) {
+    justify-self: end;
+  }
+}
+
 .copyright__link {
   display: flex;
   justify-content: space-between;
   text-decoration: none;
   padding: 22px 0;
+
+  @media (min-width: $tablet-width) {
+    justify-self: end;
+  }
 }
 
 .copyright__text {

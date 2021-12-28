@@ -1,5 +1,13 @@
 .page-footer {
   background-color: $color-grey-300;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .page-footer__wrapper {
@@ -8,6 +16,12 @@
   margin-left: auto;
   margin-right: auto;
   width: 280px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 30px;
+  }
 }
 
 .page-footer__logo {
@@ -15,4 +29,8 @@
   width: 128px;
   height: auto;
   margin: 20px auto 30px;
+
+  @media (min-width: $tablet-width) {
+    justify-self: start;
+  }
 }

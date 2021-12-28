@@ -9,9 +9,14 @@
   justify-content: space-between;
   margin: 0;
   padding: 25px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 200px;
+  }
 }
 
 .social__link {
+  display: block;
   width: 23px;
   height: 23px;
 }
