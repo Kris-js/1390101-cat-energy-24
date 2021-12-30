@@ -3,11 +3,10 @@
   grid-template-columns: 1fr 110px 1fr;
   margin-left: auto;
   margin-right: auto;
-  width: 280px;
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    grid-template-columns: min-content 1fr;
+    grid-template-columns: max-content 1fr;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,28 +19,30 @@
   display: grid;
   grid-template-columns: 1fr 110px;
   padding-bottom: 24px;
+  padding-left: 20px;
+  padding-top: 10px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
-    // Не знаю как переписать мобилку, лого не отображается
     align-self: start;
+    padding: 10px;
   }
 }
 
 .main-nav__logo-text {
   justify-self: center;
   align-self: center;
-
-  @media (min-width: $tablet-width) {
-    grid-column: 1 / 2;
-  }
+  margin-top: 0;
 }
 
 .main-nav__toggle {
   grid-column: 3 / 4;
   justify-self: end;
+  align-self: center;
   width: 25px;
   height: 25px;
+  margin-right: 20px;
+  margin-top: -15px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -49,11 +50,14 @@
 }
 
 .main-nav__list {
-  grid-column: 2 / 4;
+  grid-column: 1 / 4;
   padding: 0;
 
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
-    justify-content: flex-end;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
   }
 }

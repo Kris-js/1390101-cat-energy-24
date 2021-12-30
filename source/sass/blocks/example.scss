@@ -1,11 +1,12 @@
+.example {
+  background-color: $color-grey-400;
+  color: $color-black;
+}
+
 .example__wrapper {
   margin-left: auto;
   margin-right: auto;
   width: 280px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: $color-grey-400;
-  color: $color-black;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -13,6 +14,8 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -37,14 +40,10 @@
 
 .example__list {
   grid-column: 1 / 3;
-  display: flex;
-  justify-content: space-between;
-
-  @media (min-width: $tablet-width) {
-    grid-column: 1 / 2;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
 }
-
 
 .example__description-statistics {
   font-family: $oswald;
@@ -64,7 +63,6 @@
   text-transform: uppercase;
   margin: 0;
   padding-top: 20px;
-  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
@@ -76,7 +74,6 @@
 .example__image-slider {
   display: flex;
   flex-direction: column;
-  min-width: 742px;
 
   @media (min-width: $tablet-width) {
     margin-top: 60px;
@@ -86,3 +83,16 @@
 .example__image {
   margin: auto;
 }
+
+.example__statistic {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
