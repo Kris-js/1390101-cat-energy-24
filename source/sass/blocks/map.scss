@@ -1,5 +1,43 @@
 .map {
   background-color: $color-grey-300;
+  position: relative;
+}
+
+.map__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding-top: 95px;
+    padding-bottom: 107px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.map__box {
+  display: flex;
+  padding: 26px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    justify-content: space-between;
+    margin: 0;
+    padding-top: 60px;
+    padding-bottom: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    width: 565px;
+    padding: 56px 80px;
+    background-color: $color-white;
+    z-index: 1;
+  }
 }
 
 .map__title {
@@ -16,4 +54,17 @@
   line-height: 20px;
   color: $color-grey-600;
   margin: 0;
+}
+
+.map__container {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+  }
 }
