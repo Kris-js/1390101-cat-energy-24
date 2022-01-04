@@ -1,10 +1,23 @@
 .form {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: $oswald;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .form__description {
+  font-family: $oswald;
   margin: 0;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  padding-bottom: 37px;
 }

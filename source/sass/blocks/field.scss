@@ -1,4 +1,17 @@
 .field__input {
   color: $color-grey-600;
   text-transform: uppercase;
+  min-height: 45px;
+  padding-left: 15px;
+  flex-grow: 1;
+  border: 1px solid #e7e7e7;
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 18px;
+  width: 100%;
+}
+
+.field__label {
+  align-self: center;
+  margin-right: 12px;
 }

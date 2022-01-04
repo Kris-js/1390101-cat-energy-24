@@ -1,6 +1,47 @@
-.product__list {
+.product {
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.product__title {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  font-family: $oswald;
+  font-size: 36px;
+  line-height: 36px;
+  color: $color-grey-900;
   margin: 0;
+  padding-bottom: 41px;
+  padding-top: 27px;
+}
+
+.product__list {
+  display: grid;
+  margin: 0;
+  padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.product__card--pagination {
+  display: flex;
+  flex-direction: column;
+  // не понимаю как выровнить в колонну
 }
 
 .product__card-text {
@@ -10,6 +51,8 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $color-grey-900;
+  text-align: center;
+  padding-bottom: 8px;
 }
 
 .product__card-description {
@@ -17,9 +60,12 @@
   font-size: 12px;
   line-height: 16px;
   color: $color-grey-600;
+  text-align: center;
+  padding-bottom: 21px;
 }
 
 .product__card-button {
   color: $color-grey-600;
   background-color: transparent;
+  display: block;
 }

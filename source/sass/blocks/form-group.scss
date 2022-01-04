@@ -1,5 +1,9 @@
 .form-group__inner {
-  margin: 0;
+  margin-bottom: 14px;
+  margin-top: 0;
+  display: flex;
+  color: $color-grey-600;
+  // почему цвет текста не наследуется?
 }
 
 .form-group__title {
@@ -7,6 +11,8 @@
   line-height: 26px;
   color: $color-black;
   text-transform: none;
+  display: block;
+  padding-bottom: 35px;
 }
 
 .form-group__text {
@@ -14,4 +20,48 @@
   font-size: 14px;
   line-height: 16px;
   color: $color-black;
+  display: block;
+  text-align: center;
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+    margin-left: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 81px;
+  }
+}
+
+.form-group__inner-button {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding-bottom: 72px;
+  }
+}
+
+.form-group__field {
+  align-self: center;
+}
+
+.form-group__button {
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    max-width: 282px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 568px;
+  }
+}
+
+.form-group--contacts {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 78px;
+  }
 }
