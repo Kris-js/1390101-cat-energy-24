@@ -5,6 +5,8 @@
 
   @media (min-width: $tablet-width) {
     width: 708px;
+    display: flex;
+    flex-direction: column;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,7 +24,7 @@
   padding-bottom: 36px;
   text-align: center;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     text-align: start;
   }
 }

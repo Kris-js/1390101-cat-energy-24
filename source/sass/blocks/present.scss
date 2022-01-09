@@ -12,5 +12,11 @@
   padding-left: 50px;
   padding-right: 50px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 194px;
+    padding-left: 422px;
+    padding-top: 71px;
+    padding-bottom: 69px;
+  }
 }
-// голову сломала как поставить в десктопной версии вправо

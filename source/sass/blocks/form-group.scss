@@ -1,9 +1,9 @@
-.form-group__inner {
-  margin-bottom: 14px;
-  margin-top: 0;
-  display: flex;
-  color: $color-grey-600;
-  // почему цвет текста не наследуется?
+.form-group--contacts {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 78px;
+  }
 }
 
 .form-group__title {
@@ -13,6 +13,17 @@
   text-transform: none;
   display: block;
   padding-bottom: 35px;
+}
+
+.form-group__inner {
+  margin-bottom: 14px;
+  margin-top: 0;
+  display: flex;
+  color: $color-grey-600;
+}
+
+.form-group__field {
+  align-self: center;
 }
 
 .form-group__text {
@@ -41,10 +52,6 @@
   }
 }
 
-.form-group__field {
-  align-self: center;
-}
-
 .form-group__button {
   margin-bottom: 21px;
 
@@ -55,13 +62,5 @@
 
   @media (min-width: $desktop-width) {
     max-width: 568px;
-  }
-}
-
-.form-group--contacts {
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 78px;
   }
 }
