@@ -38,13 +38,24 @@
   }
 }
 
-.product-card--pagination {
-  display: flex;
-  flex-direction: column;
-  // не понимаю как выровнить в колонну
+.product__reloading {
+  padding-top: 78px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 0;
+    margin-bottom: 25px;
+    border: 2px solid $color-grey-400;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }
 
-.product__card-text {
+.product__text {
   font-family: $oswald;
   margin: 0;
   font-size: 16px;
@@ -53,19 +64,30 @@
   color: $color-grey-900;
   text-align: center;
   padding-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+    padding-bottom: 23px;
+  }
 }
 
-.product__card-description {
+.product__description {
   margin: 0;
   font-size: 12px;
   line-height: 16px;
   color: $color-grey-600;
   text-align: center;
   padding-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
-.product__card-button {
+.product__button {
   color: $color-grey-600;
-  background-color: transparent;
+  background-color: $color-grey-300;
   display: block;
 }

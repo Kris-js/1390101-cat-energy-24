@@ -10,10 +10,10 @@
     width: 324px;
     padding: 40px;
     background-color: $color-grey-300;
+  }
 
-    @media (min-width: $desktop-width) {
-      width: 245px;
-    }
+  @media (min-width: $desktop-width) {
+    width: 245px;
   }
 }
 
@@ -27,6 +27,16 @@
   }
 }
 
+.product-card__title-link {
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    text-align: center;
+  }
+}
+
 .product-card__title {
   font-family: $oswald;
   margin: 0;
@@ -34,13 +44,10 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $color-grey-700;
-}
 
-.product-card__title-link {
-  @media (min-width: $tablet-width) {
-    grid-column: 1 / 4;
-    grid-row: 2 / 3;
-    text-align: center;
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
@@ -71,13 +78,6 @@
     justify-content: space-between;
   }
 }
-
-.product-card__specifications-definition {
-  @media (min-width: $tablet-width) {
-    border-bottom: 1px solid #cdcdcd;
-  }
-}
-// пока не знаю как сделать нижний разделитель
 
 .product-card__specifications-meaning {
   margin: 0;
