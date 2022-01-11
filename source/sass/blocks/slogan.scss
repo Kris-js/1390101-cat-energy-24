@@ -1,8 +1,24 @@
-.slogan__wrapper {
-  background-image: url("../img/background/index-katenergy.png");
+.slogan {
+  background-image: url("../img/background/index-background__slogan.png");
   background-repeat: no-repeat;
+  background-color: rgba(104, 183, 56, 0.85);
+  background-position: 50% 0;
+  background-size: 320px 302px;
+  width: 100%;
   margin: 0 auto;
+  order: 2;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    background-color: $color-white;
+    height: 100%;
+  }
+}
+
+.slogan__wrapper {
   width: 280px;
+  text-align: center;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -20,8 +36,6 @@
   line-height: 36px;
   margin: 0;
   padding-top: 27px;
-  padding-right: 35px;
-  padding-left: 36px;
   padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
@@ -42,8 +56,7 @@
   line-height: 14px;
   text-transform: uppercase;
   margin: 0;
-  padding-right: 62px;
-  padding-left: 60px;
+  padding-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     color: $color-black;
