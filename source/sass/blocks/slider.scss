@@ -1,11 +1,60 @@
 .slider {
-  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.slider__range {
+.slider__inner {
+  position: relative;
+  align-self: center;
+  justify-self: center;
+  width: 86px;
+  height: 14px;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+  margin-left: 10px;
+  margin-right: 10px;
+
   @media (min-width: $tablet-width) {
-    width: 472px;
+    width: 426px;
+    height: 6px;
+    background-color: #dcdcdc;
     margin-left: auto;
     margin-right: auto;
   }
 }
+
+.slider__range {
+  position: absolute;
+  width: 36px;
+  height: 6px;
+  top: 3px;
+  left: 5px;
+  background-color: $color-green-1000;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 8px;
+    height: 8px;
+    top: -2px;
+    left: 210px;
+  }
+}
+
+.slider__button {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 20px;
+  border: 0;
+  text-transform: uppercase;
+  background-color: $color-grey-500;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px dotted $color-black;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+// не работают кнопки, как сделать обводку вокруг кнопки?

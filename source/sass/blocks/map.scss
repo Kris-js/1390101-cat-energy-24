@@ -47,13 +47,25 @@
   color: $color-grey-900;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    min-width: 171px;
+  }
 }
+// вот как прибивать текст в таких случаях br не поставишь же?
 
 .map__address {
   font-size: 14px;
   line-height: 20px;
   color: $color-grey-600;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .map__container {

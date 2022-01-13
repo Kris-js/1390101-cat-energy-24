@@ -24,7 +24,7 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
-    align-self: start;
+    align-self: center;
     padding: 10px;
   }
 }
@@ -75,10 +75,18 @@
 @media (max-width: $mobile-width-only) {
   .main-nav--closed .site-list__item {
     display: none;
+
+    &--active {
+      display: block;
+    }
   }
 
   .main-nav--closed .user-list__item {
     display: none;
+  }
+
+  .main-nav--opened .main-nav {
+    z-index: 10;
   }
 }
 

@@ -1,6 +1,12 @@
 .example {
   background-color: $color-grey-400;
   color: $color-black;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $color-white;
+    border-top: 1px solid #e6e6e6;
+  }
 }
 
 .example__wrapper {
@@ -19,6 +25,10 @@
   }
 }
 
+.example__text {
+  margin-bottom: 40px;
+}
+
 .example__title {
   grid-column: 1 / 3;
   font-family: $oswald;
@@ -27,6 +37,12 @@
   margin: 0;
   padding-top: 25px;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 63px;
+  }
 }
 
 .example__description {
@@ -36,6 +52,24 @@
   line-height: 18px;
   color: $color-grey-600;
   padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 54px;
+  }
+}
+
+.example__statistic {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .example__list {
@@ -43,16 +77,57 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-align: center;
+  column-gap: 32px;
+}
+
+.example__list-item {
+  position: relative;
+  width: 124px;
+
+  @media (min-width: $tablet-width) {
+    width: 165px;
+  }
+}
+
+.example__list-item::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 124px;
+  height: 56px;
+  background: url(../img/icon/example_decoration.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    height: 72px;
+    top: -15px;
+  }
 }
 
 .example__description-statistics {
   font-family: $oswald;
   font-size: 24px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 37px;
+    font-size: 30px;
+  }
 }
 
 .example__description-text {
   margin: 0;
+  font-size: 12px;
+  line-height: 12px;
+  padding-top: 7px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 14px;
+    font-size: 14px;
+  }
 }
 
 .example__description-result {
@@ -68,8 +143,13 @@
     grid-column: 2 / 3;
     padding-top: 0;
     justify-self: end;
+    font-size: 20px;
+    line-height: 20px;
+    align-self: start;
+    width: 175px;
   }
 }
+// как прибить совсем к краю?
 
 .example__image-slider {
   display: flex;
@@ -81,17 +161,34 @@
 }
 
 .example__image {
-  margin: auto;
+  @media (min-width: $tablet-width) {
+    position: relative;
+    overflow: hidden;
+    width: 600px;
+    height: 600px;
+  }
 }
 
-.example__statistic {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.example__image-be {
+  margin: 0 auto;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 592px;
+    height: 511px;
+    transform: translate(-50%);
+    object-fit: cover;
+  }
+}
+
+.example__image-now {
+  display: none;
+
+  @media (min-width: $tablet-width) {
     display: block;
+    width: 592px;
+    height: 511px;
   }
 }

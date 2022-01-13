@@ -2,7 +2,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 280px;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -61,5 +61,81 @@
 }
 
 .advantages__description {
-  margin: 0;
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 0;
+  padding-left: 72px;
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-top: 120px;
+  }
 }
+
+.advantages__description--one::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background: url(../img/icon/advantages_one.svg);
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.advantages__description--two::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background: url(../img/icon/advantages_two.svg);
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+}
+// не меняется размер, потому-то в свг прописан. А как же его поменять? не копировать же несколько картинок
+
+.advantages__description--three::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background: url(../img/icon/advantages_three.svg);
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.advantages__description--four::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background: url(../img/icon/advantages_four.svg);
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
