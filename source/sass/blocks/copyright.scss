@@ -28,4 +28,8 @@
   margin-top: 0;
   margin-right: 10px;
   margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 8px;
+  }
 }

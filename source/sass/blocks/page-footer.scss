@@ -12,15 +12,22 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+  // какая-то фигня с центровкой
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 .page-footer__logo {
   padding-top: 30px;
   padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    justify-self: start;
+  }
 }
 
 .page-footer__logo-image {
@@ -29,7 +36,6 @@
 
   @media (min-width: $tablet-width) {
     justify-self: start;
-    margin: 0;
   }
 
   @media (min-width: $desktop-width) {

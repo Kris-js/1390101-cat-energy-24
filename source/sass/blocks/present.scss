@@ -1,10 +1,10 @@
 .present {
-  background-image: linear-gradient(hsl(97, 47%, 55%)), url("../img/background/present.png");
+  background-image: url("../img/background/present_cat.png");
   background-repeat: no-repeat;
   color: $color-white;
   font-size: 16px;
   line-height: 20px;
-  min-width: 280px;
+  width: 280px;
   height: 289px;
   margin-top: 35px;
   padding-top: 186px;
@@ -17,5 +17,15 @@
     padding-left: 422px;
     padding-top: 71px;
     padding-bottom: 69px;
+    width: 707px;
+    background-size: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    width: 245px;
+    padding: 0;
+    margin: 0;
   }
 }

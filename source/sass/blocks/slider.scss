@@ -36,10 +36,26 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
+    width: 34px;
+    height: 34px;
+    top: -15px;
+    left: 200px;
+    background-color: $color-white;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+  }
+}
+
+.slider__range::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
     width: 8px;
     height: 8px;
-    top: -2px;
-    left: 210px;
+    background-color: $color-green-1000;
+    border-radius: 50%;
+    left: 12px;
+    top: 12px;
   }
 }
 

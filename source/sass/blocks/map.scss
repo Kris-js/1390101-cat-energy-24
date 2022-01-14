@@ -22,10 +22,10 @@
 .map__box {
   display: flex;
   padding: 26px 0;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    justify-content: space-between;
     margin: 0;
     padding-bottom: 56px;
     padding-top: 60px;

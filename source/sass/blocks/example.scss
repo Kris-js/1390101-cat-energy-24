@@ -7,6 +7,10 @@
     background-color: $color-white;
     border-top: 1px solid #e6e6e6;
   }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
 }
 
 .example__wrapper {
@@ -78,6 +82,11 @@
   grid-template-columns: 1fr 1fr;
   text-align: center;
   column-gap: 32px;
+
+  @media (min-width: $desktop-width) {
+    column-gap: 42px;
+    grid-template-columns: min-content min-content;
+  }
 }
 
 .example__list-item {
@@ -86,6 +95,10 @@
 
   @media (min-width: $tablet-width) {
     width: 165px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 10px;
   }
 }
 
@@ -147,6 +160,11 @@
     line-height: 20px;
     align-self: start;
     width: 175px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 47px;
+    width: 400px;
   }
 }
 // как прибить совсем к краю?
