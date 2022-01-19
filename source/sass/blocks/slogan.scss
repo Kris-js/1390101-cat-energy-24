@@ -1,17 +1,20 @@
 .slogan {
-  background-image: url("../img/background/index-background__slogan.png");
+  background-image: url("../img/background/slogan_cat.png");
+  background-position: 50% auto;
+  background-size: 100% auto;
   background-repeat: no-repeat;
-  background-color: rgba(104, 183, 56, 0.85);
-  background-position: 50% 0;
-  background-size: 320px 302px;
-  width: 100%;
-  margin: 0 auto;
-  order: 2;
 
   @media (min-width: $tablet-width) {
     background-image: none;
     background-color: $color-white;
     height: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/background/slogan_cat.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: right;
   }
 }
 
@@ -22,6 +25,7 @@
 
   @media (min-width: $tablet-width) {
     width: 708px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,7 +33,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 15%;
   }
 }
 
@@ -87,22 +90,41 @@
   }
 }
 
+.slogan__image {
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
+    margin: 0 auto;
+  }
+}
+
 .slogan__button {
   display: block;
   font-size: 14px;
   line-height: 18px;
   margin: 0 auto;
-  max-width: 180px;
+  max-width: 280px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 250px;
+    left: 85px;
     margin-top: 49px;
+    max-width: 244px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 14px 26px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
+    margin: 0;
+    top: 290px;
+    left: 0;
   }
 }

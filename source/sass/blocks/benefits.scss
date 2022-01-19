@@ -63,21 +63,24 @@
   }
 }
 
-.benefits__title--icon::before {
+.benefits__title::before {
   content: "";
   position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.benefits__title--thin::before {
   top: -2px;
   left: 10px;
   width: 50px;
   height: 50px;
-  background: url(../img/icon/cat_back.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-image: url("../img/icon/cat_back.svg");
 
   @media (min-width: $tablet-width) {
-    width: 200px;
+    width: 150px;
     height: 200px;
-    left: 400px;
+    left: 430px;
   }
 
   @media (min-width: $desktop-width) {
@@ -88,16 +91,12 @@
   }
 }
 
-.benefits__title--icons::before {
-  content: "";
-  position: absolute;
+.benefits__title--fat::before {
   top: -2px;
   left: 0;
   width: 67px;
   height: 50px;
-  background: url(../img/icon/cat_back2.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-image: url("../img/icon/cat_back2.svg");
 
   @media (min-width: $tablet-width) {
     width: 200px;
@@ -147,17 +146,23 @@
   text-decoration: none;
   padding-top: 20px;
   text-transform: uppercase;
+  background-image: url("../img/icon/benefits_icon.svg.svg");
+  background-repeat: no-repeat;
+  background-position-x: 45%;
+  background-position-y: 90%;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
     font-size: 20px;
     line-height: 30px;
     text-transform: uppercase;
-    padding-top: 24px;
+    padding-top: 0;
     padding-bottom: 0;
+    background-position-x: 40%;
+    background-position-y: 75%;
   }
-}
 
-.benefits__icon {
-  margin-left: 15px;
+  @media (min-width: $tablet-width) {
+    background-position-x: 60%;
+  }
 }

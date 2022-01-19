@@ -23,6 +23,12 @@
   }
 }
 
+.site-list__item--active {
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px solid #68b738;
+  }
+}
+
 .site-list__link {
   font-family: $oswald;
   display: block;
@@ -44,7 +50,7 @@
     margin-right: 5px;
     margin-top: 5px;
     margin-left: 7px;
-    margin-bottom: 15px;
+    margin-bottom: 0;
     border-bottom: none;
   }
 }

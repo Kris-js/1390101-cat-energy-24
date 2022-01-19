@@ -65,7 +65,7 @@
   line-height: 20px;
   border: 0;
   text-transform: uppercase;
-  background-color: $color-grey-500;
+  background-color: transparent;
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px dotted $color-black;
@@ -73,4 +73,3 @@
     line-height: 30px;
   }
 }
-// не работают кнопки, как сделать обводку вокруг кнопки?

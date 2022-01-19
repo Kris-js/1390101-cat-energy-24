@@ -12,7 +12,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  // какая-то фигня с центровкой
 
   @media (min-width: $desktop-width) {
     width: 1220px;

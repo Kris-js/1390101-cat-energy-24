@@ -6,7 +6,7 @@
 .social__list {
   display: flex;
   list-style-type: none;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0 50px;
   padding-left: 0;
   padding-top: 20px;
@@ -24,26 +24,22 @@
 }
 
 .social__link {
-  display: block;
+  display: flex;
   width: 23px;
   height: 23px;
+  justify-content: center;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     width: 29px;
     height: 27px;
   }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 28px;
-  }
 }
 
-// .social__link:last-child {
-//   @media (min-width: $desktop-width) {
-//     margin-right: 0;
-//   }
-// }
+.social__item {
+  margin: 0 15px;
 
-.social__link-icon {
-  margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    margin: 0 10px;
+  }
 }
