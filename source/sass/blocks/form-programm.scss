@@ -1,6 +1,15 @@
+.form-programm {
+  border-top: 1px solid #d9d9d9;
+  padding-top: 22px;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 7px;
+}
+
 .form-programm__list {
   margin: 0;
   list-style: none;
+  display: grid;
+  padding: 0;
 }
 
 .form-programm__item {

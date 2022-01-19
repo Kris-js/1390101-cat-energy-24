@@ -1,4 +1,6 @@
 .form-group--contacts {
+  margin-top: 26px;
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -10,9 +12,17 @@
   font-size: 24px;
   line-height: 26px;
   color: $color-black;
-  text-transform: none;
   display: block;
+  text-transform: none;
   padding-bottom: 35px;
+}
+
+.form-group__title::after {
+  content: "";
+  width: 100%;
+  background-color: $color-green-1000;
+  height: 2px;
+  display: inline-block;
 }
 
 .form-group__inner {
@@ -62,4 +72,9 @@
   @media (min-width: $desktop-width) {
     max-width: 568px;
   }
+}
+
+.form-group__field--comment {
+  display: flex;
+  flex-direction: column;
 }
