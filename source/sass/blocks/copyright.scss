@@ -1,5 +1,6 @@
 .copyright {
   @media (min-width: $tablet-width) {
+    display: flex;
     justify-self: end;
   }
 }
@@ -8,14 +9,12 @@
   display: flex;
   justify-content: space-between;
   text-decoration: none;
-  padding-bottom: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     justify-self: end;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 30px;
+    align-self: center;
   }
 }
 
@@ -23,8 +22,9 @@
   font-size: 16px;
   line-height: 18px;
   color: $color-grey-600;
-  text-align: center;
-  margin-top: 0;
-  margin-right: 10px;
-  margin-bottom: 0;
+  margin-right: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+  }
 }
