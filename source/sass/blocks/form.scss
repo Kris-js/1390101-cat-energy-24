@@ -20,4 +20,10 @@
   line-height: 18px;
   text-transform: uppercase;
   padding-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 330px;
+  }
 }

@@ -13,6 +13,11 @@
   line-height: 18px;
   width: 150px;
   flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .field__label {
@@ -25,4 +30,8 @@
   min-height: 150px;
   margin-bottom: 22px;
   padding-top: 9px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
 }

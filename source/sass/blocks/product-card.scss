@@ -4,6 +4,9 @@
   grid-template-rows: 1fr 1fr min-content;
   gap: 20px;
   margin-bottom: 25px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  padding-top: 19px;
 
   @media (min-width: $tablet-width) {
     grid-template-rows: min-content 1fr 1fr min-content;

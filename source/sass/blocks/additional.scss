@@ -25,6 +25,8 @@
   padding-top: 25px;
   padding-bottom: 36px;
   text-align: center;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
 
   @media (min-width: $tablet-width) {
     text-align: start;
@@ -47,7 +49,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr min-content;
-  gap: 15px;
+  gap: 10px;
+  border-bottom: 1px solid #cdcdcd;
+  padding-bottom: 19px;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr 1fr;

@@ -1,6 +1,10 @@
 .form-group--contacts {
   margin-top: 26px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -12,9 +16,21 @@
   font-size: 24px;
   line-height: 26px;
   color: $color-black;
-  display: block;
   text-transform: none;
   padding-bottom: 35px;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 30px;
+  }
 }
 
 .form-group__title::after {
@@ -23,16 +39,23 @@
   background-color: $color-green-1000;
   height: 2px;
   display: inline-block;
+  align-self: center;
+  margin-left: 14px;
 }
 
 .form-group__inner {
   margin-bottom: 14px;
   margin-top: 0;
   color: $color-grey-600;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .form-group__field {
   align-self: center;
+  margin-right: 8px;
 }
 
 .form-group__text {
@@ -47,6 +70,8 @@
   @media (min-width: $tablet-width) {
     align-self: center;
     margin-left: 61px;
+    padding: 0;
+    font-size: 16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -63,10 +88,14 @@
 
 .form-group__button {
   margin-bottom: 21px;
+  margin-top: 25px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
     max-width: 282px;
+    font-size: 20px;
+    padding-top: 13px;
+    padding-bottom: 13px;
   }
 
   @media (min-width: $desktop-width) {
