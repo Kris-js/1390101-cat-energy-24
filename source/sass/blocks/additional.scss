@@ -25,14 +25,15 @@
   padding-top: 25px;
   padding-bottom: 36px;
   text-align: center;
-  border-top: 1px solid #ebebeb;
-  border-bottom: 1px solid #ebebeb;
+  border-top: 1px solid $color-grey-200;
+  border-bottom: 1px solid $color-grey-200;
 
   @media (min-width: $tablet-width) {
     text-align: start;
     font-size: 36px;
     line-height: 36px;
     padding-bottom: 55px;
+    border-top: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -46,8 +47,7 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    border: 1px solid #ebebeb;
-    padding: 30px;
+    border: 1px solid $color-grey-200;
   }
 
   @media (min-width: $desktop-width) {
@@ -55,6 +55,7 @@
     grid-row: 2 / 3;
     width: 895px;
     border: none;
+    margin-bottom: 86px;
   }
 }
 
@@ -63,7 +64,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr min-content;
   gap: 10px;
-  border-bottom: 1px solid #cdcdcd;
+  border-bottom: 1px solid $color-grey-100;
   padding-bottom: 19px;
   align-items: center;
 
@@ -71,7 +72,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr min-content;
     margin-top: 26px;
-    padding-bottom: 0;
+    padding: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -85,7 +86,7 @@
 
 .additional__item:first-child {
   @media (min-width: $desktop-width) {
-    border-top: 1px solid #cdcdcd;
+    border-top: 1px solid $color-grey-100;
   }
 }
 

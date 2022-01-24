@@ -13,6 +13,7 @@
 }
 
 .form-group__title {
+  position: relative;
   font-size: 24px;
   line-height: 26px;
   color: $color-black;
@@ -31,16 +32,6 @@
   @media (min-width: $desktop-width) {
     margin-top: 30px;
   }
-}
-
-.form-group__title::after {
-  content: "";
-  width: 100%;
-  background-color: $color-green-1000;
-  height: 2px;
-  display: inline-block;
-  align-self: center;
-  margin-left: 14px;
 }
 
 .form-group__inner {
@@ -104,6 +95,22 @@
 }
 
 .form-group__field--comment {
+  position: relative;
   display: flex;
   flex-direction: column;
+  background-color: $color-white;
+  padding-right: 22px;
+  margin-left: -20px;
+}
+
+.form-group__field--comment::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  background-color: $color-green-1000;
+  height: 2px;
+  align-self: center;
+  top: 15px;
+  left: -50px;
+  z-index: -1;
 }

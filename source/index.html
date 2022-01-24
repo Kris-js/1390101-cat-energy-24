@@ -124,10 +124,10 @@
         <div class="example__image-slider">
           <div class="example__images">
             <div class="example__image example__image--previous">
-              <img class="example__image-be" src="./img/before.png">
+              <img src="./img/before.png">
             </div>
             <div class="example__image example__image--next">
-              <img class="example__image-now" src="./img/after.png">
+              <img src="./img/after.png">
             </div>
           </div>
           <div class="slider">
@@ -259,14 +259,6 @@
         navMain.classList.add('main-nav--closed');
         navMain.classList.remove('main-nav--opened');
       }
-    });
-  </script>
-
-  <script>
-    const bar = document.querySelector('.slider__button');
-
-    bar.addEventListener('button', evt => {
-      document.documentElement.style.setProperty('--active-position', evt.target.value + '%');
     });
   </script>
 

@@ -10,7 +10,7 @@
   justify-self: center;
   width: 86px;
   height: 14px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $color-grey-100;
   border-radius: 6px;
   margin-left: 10px;
   margin-right: 10px;
@@ -41,7 +41,7 @@
     top: -15px;
     left: 200px;
     background-color: $color-white;
-    border: 1px solid #cdcdcd;
+    border: 1px solid $color-grey-100;
     border-radius: 50%;
   }
 }

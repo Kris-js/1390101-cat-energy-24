@@ -1,7 +1,10 @@
 .slogan {
-  background-image: url("../img/background/slogan_cat.png");
-  background-position: 50% auto;
-  background-size: 100% auto;
+  position: relative;
+  background-image:
+    url("../img/background/slogan_cat.png"),
+    linear-gradient(#64a83d 302px, $color-white 302px);
+  background-position: 50% 0;
+  background-size: auto auto;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
@@ -9,12 +12,20 @@
     background-color: $color-white;
     height: 100%;
   }
+}
 
+.slogan::before {
   @media (min-width: $desktop-width) {
+    content: "";
     background-image: url("../img/background/slogan_cat.png");
-    background-size: auto 100%;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right bottom;
+    background-color: #64a83d;
+    position: absolute;
+    top: -200px;
+    right: 0;
+    bottom: 0;
+    left: 50%;
   }
 }
 
