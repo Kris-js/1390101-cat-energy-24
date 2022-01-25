@@ -41,6 +41,8 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 55px;
+    padding-left: 20px;
+    margin-left: -10px;
   }
 }
 
@@ -54,26 +56,12 @@
   top: -45px;
   left: -50px;
   z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    top: -105px;
+  }
 }
 
 .form-options__item {
   margin-bottom: 13px;
-}
-
-.form-options__control-label {
-  margin-left: 16px;
-}
-
-.form-options__control-mark {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 1px solid $color-grey-100;
-
-  @media (min-width: $tablet-width) {
-    width: 40px;
-    height: 40px;
-  }
 }
